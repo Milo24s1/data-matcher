@@ -1,5 +1,6 @@
 const express =  require('express');
 var bodyParser = require('body-parser');
+const uuid = require('uuid');
 const app = express();
 const port = process.env.PORT || 9999;
 
@@ -18,6 +19,17 @@ app.get('/add', function(req, res){
     res.render('add');
 });
 
+app.post('/getToken',function (req,res) {
+    console.log('getToken req came ');
+   res.send({'token':uuid.v4()});
+});
+
+app.post('/save',(req,res)=>{
+    res.send({'message':'save endpoint is not implemented yet'});
+});
+app.post('/compare',(req,res)=>{
+    res.send({'message':'compare endpoint is not implemented yet'});
+});
 
 app.listen(port, function(){
     console.log('Server is running on port:', port);

@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 
+    <!-- JQuery -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/index.js"></script>
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -16,7 +19,7 @@
 
     <!--<link rel="stylesheet" href="css/bootstrap.css">-->
     <!--<link href="css/mdb.min.css" rel="stylesheet">-->
-    <!--<script src="js/jquery.min.js"></script>-->
+
 
 </head>
 <body>
@@ -34,7 +37,7 @@
 
         <p class="animated fadeIn text-muted">Check it now</p>
 
-        <a href="add"><button id="token_yes" type="button" class="btn btn-success btn-lg">I have a Token</button></a>
+        <a href="#addDiv"><button id="token_yes" type="button" class="btn btn-success btn-lg">I have a Token</button></a>
         <button id="token_no" type="button" class="btn btn-danger btn-lg">Need a Token ?</button>
     </div>
 </div>
@@ -43,6 +46,50 @@
     <div class="col-8">
     </div>
     <div class="col-2"></div>
+</div>
+<div id="addDiv" class="row">
+    <div class="col-md-2"></div>
+    <div class="col-md-8">
+        <div class="card">
+
+            <h5 class="card-header info-color white-text text-center py-4">
+                <strong>Add Data</strong>
+            </h5>
+
+            <!--Card content-->
+            <div class="card-body px-lg-5">
+
+                <!-- Form -->
+                <form id="dataForm" class="text-center" style="color: #757575;">
+
+                    <p></p>
+
+
+
+                    <!-- token -->
+                    <div class="md-form mt-3">
+                        <input type="text" id="materialSubscriptionFormPasswords" class="form-control">
+                        <label for="materialSubscriptionFormPasswords">Token</label>
+                    </div>
+
+                    <div class="md-form mt-3">
+                        <textarea type="text" id="userText" class="md-textarea form-control" rows="5"></textarea>
+                        <label for="userText">Data</label>
+                    </div>
+                    <input type="hidden" id="hdnAction" value="compare">
+                    <!-- Submit button -->
+                    <button id="submitBtn" class="btn  btn-rounded btn-block z-depth-0 my-4 waves-effect btn-success" type="submit">Submit</button>
+                    <p>
+                        <a href="" target="_blank">Don't have a token ?</a>
+                    </p>
+                </form>
+                <!-- Form -->
+
+            </div>
+
+        </div>
+    </div>
+    <div class="col-md-2"></div>
 </div>
 <div style="height: 10vh">
 </div>
@@ -59,8 +106,7 @@
 </footer>
 <!-- Footer -->
 
-<!-- JQuery -->
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
 <!-- Bootstrap tooltips -->
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.13.0/umd/popper.min.js"></script>
 <!-- Bootstrap core JavaScript -->

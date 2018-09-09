@@ -4,16 +4,14 @@
   "description": "this is a simple that match two data sources from 2 parties ",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node app.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.18.3",
     "ejs": "^2.6.1",
-    "express": "^4.16.3"
-  },
-  "scripts": {
-    "start": "node app.js"
+    "express": "^4.16.3",
+    "uuid": "^3.3.2"
   }
 }
